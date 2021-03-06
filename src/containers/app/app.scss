@@ -1,0 +1,19 @@
+.sidebar-app {
+  background-color: #000;
+  height: 100vh;
+  width: 232px;
+  color: white;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  ul {
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+}
