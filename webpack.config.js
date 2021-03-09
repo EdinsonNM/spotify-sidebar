@@ -20,8 +20,12 @@ module.exports = (webpackConfigEnv, argv) => {
   })(defaultConfig, {
     // customize the webpack config here
     module: {
-      externals: ["@pacificoseguros/styleguide"],
+      // externals: ["@pacificoseguros/styleguide"],
       rules: [
+        {
+          test: /\.svg$/,
+          use: ['@svgr/webpack']
+        },
         {
           test: /\.(scss)$/,
           use: [
