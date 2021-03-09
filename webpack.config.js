@@ -6,7 +6,6 @@ module.exports = (webpackConfigEnv, argv) => {
     orgName: "pacificoseguros",
     projectName: "spotify-sidebar",
     webpackConfigEnv,
-    externals: ["@pacificoseguros/styleguide"],
     argv,
   });
 
@@ -19,8 +18,8 @@ module.exports = (webpackConfigEnv, argv) => {
     },
   })(defaultConfig, {
     // customize the webpack config here
+    externals: ["@ps/styleguide"],
     module: {
-      externals: ["@pacificoseguros/styleguide"],
       rules: [
         {
           test: /\.(scss)$/,

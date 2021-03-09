@@ -1,6 +1,6 @@
 import React from "react";
 import "./app.scss";
-import { Logo } from "@pacificoseguros/styleguide";
+import { Logo } from "@ps/styleguide";
 export default function Root(props) {
   return (
     <section className="sidebar-app">
