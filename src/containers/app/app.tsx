@@ -1,21 +1,31 @@
 import React from "react";
 import "./app.scss";
-import { Logo } from "@ps/styleguide";
+import { Logo, HomeIcon, SearchIcon, LibraryIcon } from "@ps/styleguide";
+
 export default function Root(props) {
   return (
     <section className="sidebar-app">
       <div className="sidebar-app__logo">
         <Logo width={120} />
       </div>
-      <ul>
+      <ul className="sidebar-app__menu">
         <li>
-          <a href="player">Inicio</a>
+          <a href="player">
+            <HomeIcon />
+            <p>Inicio</p>
+          </a>
         </li>
         <li>
-          <a href="search">buscar</a>
+          <a href="search">
+            <SearchIcon />
+            <p>Buscar</p>
+          </a>
         </li>
         <li>
-          <a href="/">cerrar sesión</a>
+          <a href="/">
+            <LibraryIcon />
+            <p>Tu biblioteca</p>
+          </a>
         </li>
       </ul>
     </section>
