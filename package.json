@@ -1,7 +1,7 @@
 {
   "name": "@pacificoseguros/spotify-sidebar",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack servec --port 8083",
     "start:dev": "webpack serve --port 8083",
     "start:standalone": "webpack serve --env standalone",
     "build": "webpack --mode=production",
